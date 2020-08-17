@@ -1,0 +1,32 @@
+.navlink {
+  font-family: "sans-serif";
+}
+
+.navlink a:before, div.brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+.navlink a:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+.navlink a:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+.navlink a:hover:before, .navlink a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
