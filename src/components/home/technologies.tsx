@@ -60,6 +60,7 @@ const Technologies = ({ techType, heading }: TechnologiesPros) => {
             return (
               <TechnologyCard key={technology.name} technology={technology} />
             );
+          return <div></div>
         })}
       </Row>
     </div>
