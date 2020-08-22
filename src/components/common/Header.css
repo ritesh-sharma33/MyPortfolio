@@ -30,3 +30,13 @@
     opacity: 1;
     transform: translateX(0px);
 }
+
+.navlinkText {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navlinkText {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,325 @@
+
+html {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+}
+
+.aboutPage {
+  background-color: #212121;
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 600px) {
+  .aboutPageHeroRow {
+    height: 0vh;
+  }
+  .programmingSvgElement {
+    margin-top: 4vh;
+    height: 42vh;
+    width: 90%;
+    margin-left: 3vw;
+    padding: 0;
+    margin-bottom: 7vh;
+  }
+  .heroIntroText {
+    color: white;
+    font-family: 'Fira Code', monospace;
+    font-size: 2.5vw;
+    line-height: 0;
+    padding-top: 0;
+  }
+  .ideSection {
+    display: table;
+    margin: 0 auto;
+  }
+  .introOutput {
+    color: white;
+    font-family: 'Fira Code', monospace;
+    font-size: 2.5vw;
+  }
+  .outputSection {
+    display: table;
+    margin: 0 auto;
+  }
+  .sectionHeadingText {
+    font-size: 3vh;
+    text-align: center;
+  }
+  .educationCard {
+    margin: auto;
+    width: 85%;
+  }
+  .sectionHeadingContainer {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .educationIllustration {
+    visibility: hidden;
+  }
+
+  .professionalIllustration {
+    visibility: hidden;
+  }
+
+  #educationalBackground {
+    margin-top: 105vh;
+  }
+
+  .eduCardElement {
+    margin: auto;
+    width: 80%;
+  }
+
+  .eduBackColumn {
+    visibility: hidden;
+  }
+
+  .eduCardTitle {
+    color: white;
+    font-size: 15px;
+  }
+
+  .eduCardSubtitle {
+    color: #ABABAB;
+    font-size: 12px;
+  }
+
+  .eduCardText {
+    color: #ABABAB;
+    font-size: 9px;
+  }
+
+  .proColumn {
+    visibility: hidden;
+  }
+
+  .proCardTitle {
+    color: white;
+    font-size: 15px;
+  }
+
+  .proCardSubtitle {
+    color: #ABABAB;
+    font-size: 12px;
+  }
+
+  .proCardText {
+    color: #ABABAB;
+    font-size: 9px;
+  }
+}
+
+/* For big screens */
+@media only screen and (min-width: 992px) {
+  .aboutPageHeroRow {
+    height: 100vh;
+  }
+
+  .programmingSvgElement {
+    height: 50vh;
+    width: 90%;
+    margin-top: 7vh;
+    margin-left: 2vw;
+  }
+  .heroIntroText {
+    color: white;
+    font-family: 'Fira Code', monospace;
+  }
+  .introSection {
+    margin-top: 20vh;
+    margin-left: 10vw;
+  }
+  .introOutput {
+    min-height: 20vh;
+    color: white;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+  }
+  .outputSection {
+    margin-top: 20vh;
+    margin-left: 10vw;
+  }
+  .sectionHeadingText {
+    font-size: 30px;
+    padding-left: 5vw;
+  }
+
+  .educationSection {
+    padding-left: 6vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  .educationCard {
+    margin-left: 2vw;
+    width: 50%;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+
+  #educationalBackground {
+    height: 100vh;
+  }
+
+  #professionalExperience {
+    height: 100vh;
+  }
+
+  .professionalIllustration {
+    margin-top: 10%;
+  }
+}
+
+.classname {
+  color: #E06C6D;
+}
+
+.variablename {
+  color: #E5BE77;
+}
+
+.keyword {
+  color: #B778DD;
+}
+
+.methodname {
+  color: #3BA9C2;
+}
+
+.stringliteral {
+  color: #69B779;
+}
+
+.numberliteral {
+  color: #D19A5E
+}
+
+.sectionHeadingText {
+  color: white;
+  font-family: "Varela Round";
+}
+
+.educationCard {
+  background-color: #3C3C3C;
+  opacity: 0.9;
+}
+
+/* For step progress */
+
+.eduSectionContainer {
+  margin-left: 8vw;
+  border-left: 3px solid #ddd;
+  margin-top: 50px;
+
+}
+.node {
+  position: relative;
+}
+.node h3, .node p {
+  margin: 0;
+}
+.node::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  border: 2px solid #FF6366;
+  border-radius: 50%;
+  position: absolute;
+  left: -.6rem;
+}
+
+.eduCardElement {
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  margin-left: 30px;
+}
+
+.eduCardTitle {
+  color: white;
+  font-size: 20px;
+}
+
+.eduCardSubtitle {
+  color: #ABABAB;
+  font-size: 15px;
+}
+
+.eduCardText {
+  color: #ABABAB;
+  font-size: 12px;
+}
+
+/* The step progress styling over */
+
+.educationIllu {
+  height: 60%;
+  width: 60%; 
+}
+
+.professionalIllu {
+  height: 60%;
+  width: 60%; 
+}
+
+.educationIllustration {
+  margin-top: 15%;
+  margin-left: 7vw;
+}
+
+.professionalIllustration {
+  margin-left: 10vw;
+  margin-top: 25%;
+}
+
+.proCardElement {
+  margin-bottom: 8vh;
+  margin-left: 30px;
+  margin-right: 5vw;
+}
+
+.proCardTitle {
+  color: white;
+  font-size: 20px;
+}
+
+.proCardSubtitle {
+  color: #ABABAB;
+  font-size: 15px;
+}
+
+.proCardText {
+  color: #ABABAB;
+  font-size: 12px;
+}
+
+#technologiesSection span {
+  position: absolute;
+  top: 86vh;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#technologiesSection span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#technologiesSection span:nth-of-type(2) {
+  top: 88vh;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+#technologiesSection span:nth-of-type(3) {
+  top: 90vh;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}

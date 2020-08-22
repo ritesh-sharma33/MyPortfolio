@@ -2,34 +2,20 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-size: 100%;
 }
-
-#root {
-  background-color: #212121;
-}
-
 a:hover {
   text-decoration: none;
-}
-
-.techName {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-50%);
-    text-transform: capitalize;
-    font-size: 16px;
-    transition: all .3s;
-    color: "white"
 }
 
 .hero-screen-full {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.homePage {
+  background-color: #212121;
 }
 
 #technologiesSection a span {
@@ -85,27 +71,125 @@ a:hover {
   }
 }
 
+/* Media Queries for mobile */
 @media only screen and (max-width: 600px) {
-  img.myImage { width: 95%; height: 40% }
+  html { font-size: 100%; }
+  img.myImage { width: 95%; height: 40%; margin-bottom: 9vh; }
   .techCardColumn {
     padding: 10px;
   }
   .scroller {
     visibility: hidden;
   }
+  .socialHandleIcon {
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  .socialHandleSection {
+    visibility: hidden;
+  }
+  .nameColumn {
+    margin-top: 20px;
+    height: 23vh;
+  }
+  .nameText {
+    font-size: 7vw;
+    text-align: center;
+  }
+  .helloText {
+    color: #ABABAB;
+    font-size: 3vw;
+    margin-top: 10px;
+  }
+  .descriptionText {
+    font-size: 5vw;
+  }
+  .techHeading {
+    font-size: 5vw;
+  }
+  .svgTechIcon {
+    height: 10vw;
+    width: 10vw;
+  }
+  .socialHandleIconBottom {
+    height: 40px;
+    margin-right: 3vw;
+  }
+  #socialMediaAtBottom {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .reachMeOutTxt {
+    font-size: 5vw;
+    text-align: left;
+  }
+  .firebaseIcon {
+    height: 9vw;
+    width: 6vw;
+  }
+  .deviconIcon {
+    font-size: 9vw;
+    padding: 0px;
+  }
+  .techName {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .techSection {
+    margin-top: 100vh;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-  img.myImage { width: 95%; height: 50% }
+  img.myImage { width: 55%; height: 50%; margin-top: 10px }
   .techCardColumn {
     padding: 10px;
+  }
+  .socialMediaHandle {
+    margin-top: 0vw;
+  }
+  .heroRow {
+    height: 0vh;
+  }
+  .nameText {
+    font-size: 45px;
+  }
+  .descriptionText {
+    font-size: 30px;
+  }
+  #socialMediaAtBottom {
+    visibility: hidden;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  img.myImage { width: 80%; height: 40%; }
+  img.myImage { width: 70%; height: 35%; margin-top: 10%; }
   .techCardColumn {
     padding: 30px
+  }
+  .heroRow {
+    height: 100vh;
+  }
+  .nameColumn {
+    margin-top: 70px;
+  }
+  .svgTechIcon {
+    height: 60px;
+    width: 60px;
+  }
+  #socialMediaAtBottom {
+    visibility: hidden;
+  }
+  .firebaseIcon {
+    height: 60px;
+    width: 45px;
+  }
+  .deviconIcon {
+    font-size: 40px;
+  }
+  .techHeading {
+    font-size: 24px;
   }
 }
 
@@ -118,4 +202,29 @@ a:hover {
   width: 50px;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.descriptionText {
+  color: #ABABAB;
+  font-family: "Varela Round";
+}
+
+.nameText {
+  color: white;
+  font-weight: bold;
+  font-family: "Varela Round"
+}
+
+.helloText {
+  color: #ABABAB;
+}
+
+.techHeading {
+  font-family: "Varela Round";
+  font-weight: bold;
+}
+
+.techName {
+  color: white;
+  visibility: hidden;
 }

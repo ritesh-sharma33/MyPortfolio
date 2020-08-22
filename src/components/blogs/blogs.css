@@ -1,0 +1,148 @@
+
+.blogCard {
+  background-color: #3C3C3C;
+  opacity: 0.9;
+}
+
+.blogTitle {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Varela Round";
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.blogSubtitle {
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+  font-family: "Varela Round";
+}
+
+.blogBody {
+  color: white;
+  font-family: "Varela Round";
+}
+
+
+/* For mobile screens */
+@media only screen and (max-width: 600px) {
+  .blogCardContainer {
+    width: 87.5%;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blogBody {
+    height: 20vh;
+    text-overflow: ellipsis;
+  }
+
+  .blogSubtitle {
+    font-size: 14px;
+  }
+
+  .blogIntroText {
+    font-size: 6vw;
+    color: white;
+    font-family: "Varela Round",
+  }
+
+  .blogPageIntroSection {
+    margin-top: 30px;
+    margin-bottom: 4vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+/* For big screens */
+@media only screen and (min-width: 992px) {
+  .blogCardContainer {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blogText {
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; 
+   -webkit-box-orient: vertical;
+  }
+
+  .blogColumn {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .blogTitle {
+    font-size: 23px;
+  }
+
+  .blogSubtitle {
+    font-size: 14px;
+  }
+
+  .blogTitle {
+    min-height: 52px;
+    max-height: 52px;
+  }
+
+  .blogIntroText {
+    font-size: 26px;
+    color: white;
+    font-family: "Varela Round",
+  }
+
+  .blogPageIntroSection {
+    margin-top: 30px;
+    margin-bottom: 7vh;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+* {
+  --lh: 1.4rem;
+  line-height: var(--lh);
+}
+
+.overflow {
+  --max-lines: 3;
+  position: relative;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden; /* space for ellipsis */
+}
+.overflow::before {
+  position: absolute;
+  content: "...";
+  bottom: 0;
+  right: 0;
+}
+.overflow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background: #3C3C3C;
+}
+
+.module {
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.sutitleRow {
+  display: flex;
+  justify-content: space-between;
+}
