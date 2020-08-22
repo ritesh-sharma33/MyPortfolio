@@ -102,7 +102,7 @@ const AboutPage = () => {
                       <span className="variablename">developer</span>.
                       <span className="methodname">setStatus</span>(
                       <span className="stringliteral">
-                        "Eat! Sleep! Code! Repeat <span role="img">🔁</span>"
+                        "Eat! Sleep! Code! Repeat <span role="img" aria-label="hi" aria-hidden="false">🔁</span>"
                       </span>
                       );
                     </span>
