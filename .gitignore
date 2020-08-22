@@ -11,6 +11,9 @@
 # production
 /build
 
+# configuration file
+config.tsx
+
 # misc
 .DS_Store
 .env.local
