@@ -19,7 +19,7 @@ const Hero = () => {
             <Col data-aos="fade-right" lg={6} xs={12} sm={12}>
               <div className="photoSection">
                 <img
-                  className=" "
+                  className="myImage"
                   src="https://user-images.githubusercontent.com/45563022/89817007-1d6bb800-db65-11ea-8ee9-ac76704ddb99.png"
                   alt="Ritesh Sharma"
                 />
