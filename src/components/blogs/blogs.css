@@ -37,7 +37,6 @@
   }
 
   .blogBody {
-    height: 20vh;
     text-overflow: ellipsis;
   }
 
@@ -46,7 +45,7 @@
   }
 
   .blogIntroText {
-    font-size: 6vw;
+    font-size: 27px;
     color: white;
     font-family: "Varela Round",
   }
@@ -55,6 +54,64 @@
     margin-top: 30px;
     margin-bottom: 4vh;
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .blogTitle {
+    font-size: 22px;
+    margin-bottom: 23px;
+  }
+}
+
+/* For mid-screens */
+@media only screen and (min-width: 600px) {
+  .blogCardContainer {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blogText {
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; 
+   -webkit-box-orient: vertical;
+  }
+
+  .blogColumn {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .blogTitle {
+    font-size: 23px;
+    margin-bottom: 24px;
+  }
+
+  .blogSubtitle {
+    font-size: 14px;
+  }
+
+  .blogTitle {
+    min-height: 52px;
+    max-height: 52px;
+  }
+
+  .blogIntroText {
+    font-size: 26px;
+    color: white;
+    font-family: "Varela Round",
+  }
+
+  .blogPageIntroSection {
+    margin-top: 30px;
+    margin-bottom: 7vh;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -78,7 +135,7 @@
   }
 
   .blogColumn {
-    width: 75%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -86,6 +143,7 @@
 
   .blogTitle {
     font-size: 23px;
+    margin-bottom: 23px;
   }
 
   .blogSubtitle {
