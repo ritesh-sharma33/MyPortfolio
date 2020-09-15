@@ -345,3 +345,7 @@ html {
   -webkit-animation-delay: .3s;
   animation-delay: .3s;
 }
+
+.introOutput {
+  overflow: hidden;
+}

@@ -38,7 +38,7 @@ const Hero = () => {
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Hola
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 你好
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; مرحبا
-                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; salut &nbsp; <img src="👋" alt="hello emoji" />
+                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; salut &nbsp; <span aria-labelledby="repeat" role="img">👋</span>
               </span>
               <br /><br />
               <Typist
