@@ -15,11 +15,11 @@ html {
   }
   .programmingSvgElement {
     margin-top: 4vh;
-    height: 42vh;
+    height: 30vh;
     width: 90%;
     margin-left: 3vw;
     padding: 0;
-    margin-bottom: 7vh;
+    margin-bottom: 9vh;
   }
   .heroIntroText {
     color: white;
@@ -55,10 +55,12 @@ html {
   }
   .educationIllustration {
     visibility: hidden;
+    height: 0;
   }
 
   .professionalIllustration {
     visibility: hidden;
+    height: 0;
   }
 
   #educationalBackground {
@@ -116,7 +118,7 @@ html {
   }
 
   .programmingSvgElement {
-    height: 50vh;
+    height: 40vh;
     width: 90%;
     margin-top: 7vh;
     margin-left: 2vw;
@@ -124,15 +126,14 @@ html {
   .heroIntroText {
     color: white;
     font-family: 'Fira Code', monospace;
-    font-size: 1.5rem;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.5;
   }
   .introSection {
     margin-top: 20vh;
     margin-left: 10vw;
   }
   .introOutput {
-    min-height: 20vh;
     color: white;
     font-family: 'Fira Code', monospace;
     font-size: 16px;
@@ -169,6 +170,27 @@ html {
 
   .professionalIllustration {
     margin-top: 10%;
+  }
+}
+
+/* For mid-screens */
+@media only screen and (min-width: 600px) {
+  .programmingSvgElement {
+    height: 70%;
+    width: 90%;
+  }
+
+  .heroIntroText {
+    color: white;
+    font-family: 'fira code';
+  }
+
+  .aboutPageHeroRow {
+    height: 100vh;
+  }
+
+  .ideSection {
+    margin-top: 20vh;
   }
 }
 
@@ -210,9 +232,7 @@ html {
 
 .eduSectionContainer {
   margin-left: 8vw;
-  border-left: 3px solid #ddd;
   margin-top: 50px;
-
 }
 .node {
   position: relative;
@@ -228,7 +248,7 @@ html {
   border: 2px solid #FF6366;
   border-radius: 50%;
   position: absolute;
-  left: -.6rem;
+  left: -.5rem;
 }
 
 .eduCardElement {
@@ -275,7 +295,7 @@ html {
 }
 
 .proCardElement {
-  margin-bottom: 8vh;
+  margin-bottom: 20px;
   margin-left: 30px;
   margin-right: 5vw;
 }

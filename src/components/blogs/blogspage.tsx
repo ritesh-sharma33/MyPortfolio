@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col, Spinner } from "react-bootstrap";
 import Typist from "react-typist";
 
-import firebase from "../../firebase";
+import { db } from "../../firebase";
 import BlogCard from "./BlogCard";
 import "./blogs.css";
 
@@ -12,10 +12,9 @@ class BlogsPage extends React.Component<any, any> {
 
   constructor(props: any) {
     super(props);
-    this.ref = firebase
-      .firestore()
+    this.ref = db
       .collection("blogs")
-      .orderBy("articleNo", "asc");
+      .orderBy("articleNo", "desc");
     this.unsubscribe = null;
 
     this.state = {

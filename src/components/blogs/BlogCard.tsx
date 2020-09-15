@@ -20,7 +20,7 @@ const BlogCard = ({
   imageUrl
 }: BlogCardProps) => {
   return (
-    <a href={publicUrl}>
+    <a target="_blank" rel="noopener noreferrer" href={publicUrl}>
       <div className="blogCardContainer">
         <Card className="blogCard">
           <Card.Title className="blogTitle">{title}</Card.Title>

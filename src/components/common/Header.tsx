@@ -20,10 +20,10 @@ export default () => {
   }
 
   return (
-    <div className="headerSection" style={{ backgroundColor: "#212121" }}>
-      <Navbar onToggle={handleToggle} expanded={isHeaderExpanded} collapseOnSelect expand="lg">
-        <Navbar.Brand href="#home"><img alt="ritesh.dev" height="80" width="220" src="https://user-images.githubusercontent.com/45563022/89736314-2b96d700-da86-11ea-9fe9-06c416034218.gif" /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <div className="headerSection" style={{ backgroundColor: "#212121", color: "white" }}>
+      <Navbar onToggle={handleToggle} expanded={isHeaderExpanded} variant="light" collapseOnSelect expand="sm">
+        <Navbar.Brand href="#home"><img alt="Brand icon," height="80" width="220" src="https://user-images.githubusercontent.com/45563022/89736314-2b96d700-da86-11ea-9fe9-06c416034218.gif" /></Navbar.Brand>
+        <Navbar.Toggle className="custom-toggler" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link onClick={handleToggle} className="navlink" style={navLinkStyle} as={NavLink} to='/' exact><span className="navlinkText">Home</span></Nav.Link>

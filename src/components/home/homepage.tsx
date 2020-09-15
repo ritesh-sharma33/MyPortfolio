@@ -1,9 +1,8 @@
 import React from 'react';
 import Hero from "./Hero";
 import AOS from 'aos';
-import "./home.css";
 
-class HomePage extends React.Component<any, any> {
+class HomePage extends React.Component {
 
   constructor(props: any, context: any) {
     super(props, context);

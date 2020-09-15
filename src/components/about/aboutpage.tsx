@@ -16,9 +16,8 @@ import {
 } from "./svgelements";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Typist from "react-typist";
-
-import EducationCard from "./EducationCard";
-import ProfessionalCard from "./ProfessionalCard";
+import { Timeline } from "antd";
+import "antd/dist/antd.css";
 
 const getRandomSvgElement = () => {
   const arrayOfSvgElements = [
@@ -55,10 +54,10 @@ const AboutPage = () => {
       <div className="aboutPageHero">
         <Container>
           <Row className="aboutPageHeroRow">
-            <Col data-aos="fade-right" lg={4} xs={12} sm={12}>
+            <Col data-aos="fade-right" lg={4} xs={12} sm={5}>
               {getRandomSvgElement()}
             </Col>
-            <Col data-aos="fade-left" lg={8} xs={12} sm={12}>
+            <Col data-aos="fade-left" lg={8} xs={12} sm={7}>
               {ideVisible ? (
                 <div className="ideSection" id="sectionForIde">
                   <Typist
@@ -102,7 +101,7 @@ const AboutPage = () => {
                       <span className="variablename">developer</span>.
                       <span className="methodname">setStatus</span>(
                       <span className="stringliteral">
-                        "Eat! Sleep! Code! Repeat <span role="img" aria-label="hi" aria-hidden="false">🔁</span>"
+                        "Eat! Sleep! Code! Repeat "<span aria-labelledby="repeat" role="img">🔁</span>
                       </span>
                       );
                     </span>
@@ -128,6 +127,7 @@ const AboutPage = () => {
                     <Button
                       onClick={() => setIdeVisible(false)}
                       variant="outline-success"
+                      style={{ fontSize: "16px" }}
                     >
                       Run Snippet
                     </Button>
@@ -166,30 +166,46 @@ const AboutPage = () => {
               <span className="sectionHeadingText">Educational Background</span>
             </div>
             <div className="eduSectionContainer">
-              <div className="node">
-                <EducationCard
-                  title={"10th Grade"}
-                  grade={"81.33%"}
-                  passYear={2015}
-                  school={"Deshbandhu H.S. (Eng. Med.) School"}
-                />
-              </div>
-              <div className="node">
-                <EducationCard
-                  title={"12th Grade"}
-                  grade={"87%"}
-                  passYear={2017}
-                  school={"Deshbandhu H.S. (Eng. Med.) School"}
-                />
-              </div>
-              <div className="node">
-                <EducationCard
-                  title={"B.Tech."}
-                  grade={"9.44 CGPA"}
-                  passYear={2021}
-                  school={"KIIT Deemed to be University, Bhubaneswar, India"}
-                />
-              </div>
+              <Timeline>
+                <Timeline.Item style={{ paddingBottom: "50px" }}>
+                  <span className="eduCardTitle">
+                    B.Tech. (Information Technology)
+                  </span>
+                  <br />
+                  <span className="eduCardSubtitle">
+                    KIIT Deemed to be University, Bhubaneswar
+                  </span>
+                  <br />
+                  <span className="eduCardText">CGPA: 9.44</span>
+                  <br />
+                  <span className="eduCardText">Timespan: 2017-2021</span>
+                  <br />
+                </Timeline.Item>
+                <Timeline.Item style={{ paddingBottom: "50px" }}>
+                  <span className="eduCardTitle">Higher Secondary (12th)</span>
+                  <br />
+                  <span className="eduCardSubtitle">
+                    Deshbandhu H.S. School
+                  </span>
+                  <br />
+                  <span className="eduCardText">Percentage: 87%</span>
+                  <br />
+                  <span className="eduCardText">Timespan: 2015-2017</span>
+                  <br />
+                </Timeline.Item>
+                <Timeline.Item style={{ paddingBottom: "50px" }}>
+                  <span className="eduCardTitle">High School (10th)</span>
+                  <br />
+                  <span className="eduCardSubtitle">
+                    Deshbandhu H.S. School
+                  </span>
+                  <br />
+                  <span className="eduCardText">Percentage: 81.33%</span>
+                  <br />
+                  <span className="eduCardText">Timespan: 2013-2015</span>
+                  <br />
+                </Timeline.Item>
+              </Timeline>
             </div>
           </Col>
 
@@ -210,38 +226,64 @@ const AboutPage = () => {
               <span className="sectionHeadingText">Experience</span>
             </div>
             <div className="eduSectionContainer">
-              <div className="node">
-                <ProfessionalCard
-                  title="Developer Intern"
-                  company="LocalWire - A Hyperlocal News Platform"
-                  timeframe="May 2019 - June 2019"
-                  description="Mobile App Development"
-                />
-              </div>
-              <div className="node">
-                <ProfessionalCard
-                  title="Full Stack Developer"
-                  company="LocalWire - A Hyperlocal News Platform"
-                  timeframe="July 2019 - January 2020"
-                  description="Full Stack Development"
-                />
-              </div>
-              <div className="node">
-                <ProfessionalCard
-                  title="Full Stack Developer"
-                  company="Mozilla Club BBSR"
-                  timeframe="August 2019 - Present"
-                  description="Core member"
-                />
-              </div>
-              <div className="node">
-                <ProfessionalCard
-                  title="Summer Intern"
-                  company="HighRadius Corporation"
-                  timeframe="April 2020 - June 2020"
-                  description="Trainee-cum-Intern"
-                />
-              </div>
+              <Timeline.Item style={{ paddingBottom: "50px" }}>
+                <span className="eduCardTitle">
+                  Developer Intern
+                </span>
+                <br />
+                <span className="eduCardSubtitle">
+                  LocalWire - The Hyperlocal News Platform
+                </span>
+                <br />
+                <span className="eduCardText">Description: Mobile App Development</span>
+                <br />
+                <span className="eduCardText">Timespan: June 2019 - July 2019</span>
+                <br />
+              </Timeline.Item>
+              <Timeline.Item style={{ paddingBottom: "50px" }}>
+                <span className="eduCardTitle">
+                  Full Stack Developer
+                </span>
+                <br />
+                <span className="eduCardSubtitle">
+                  LocalWire - The Hyperlocal News Platform
+                </span>
+                <br />
+                <span className="eduCardText">Description: Full Stack Development</span>
+                <br />
+                <span className="eduCardText">Timespan: July 2019 - Jan 2020</span>
+                <br />
+              </Timeline.Item>
+              
+              <Timeline.Item style={{ paddingBottom: "50px" }}>
+                <span className="eduCardTitle">
+                  Web Developer
+                </span>
+                <br />
+                <span className="eduCardSubtitle">
+                  Mozilla Club Bhubaneswar
+                </span>
+                <br />
+                <span className="eduCardText">Description: Core Team Member and Speaker</span>
+                <br />
+                <span className="eduCardText">Timespan: Aug 2019 - Present</span>
+                <br />
+              </Timeline.Item>
+              
+              <Timeline.Item style={{ paddingBottom: "50px" }}>
+                <span className="eduCardTitle">
+                  Summer Intern
+                </span>
+                <br />
+                <span className="eduCardSubtitle">
+                  HighRadius Corporation
+                </span>
+                <br />
+                <span className="eduCardText">Description: Trainee-cum-Intern</span>
+                <br />
+                <span className="eduCardText">Timespan: Apr 2020 - June 2020</span>
+                <br />
+              </Timeline.Item>
             </div>
           </Col>
         </Row>

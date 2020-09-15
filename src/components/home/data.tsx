@@ -54,7 +54,7 @@ export const technologies = [
     "https://dart.dev/",
     (
       <img
-        alt="dart"
+        alt="Dart Icon"
         className="svgTechIcon"
         src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
       />
@@ -76,7 +76,7 @@ export const technologies = [
   ),
   new Technology(
     "TypeScript",
-    "https://www.typescriptlang.org/",
+    "",
     (
       <span className="deviconIcon">
         <i className="devicon-typescript-plain colored" />
@@ -172,7 +172,7 @@ export const technologies = [
     "https://spring.io/",
     (
       <img
-        alt="spring"
+        alt="Spring icon"
         src="https://user-images.githubusercontent.com/45563022/88325472-c97a6a00-cd42-11ea-89c8-6c078086fa77.png"
         className="svgTechIcon"
       />
@@ -185,7 +185,7 @@ export const technologies = [
     "https://flutter.dev",
     (
       <img
-        alt="flutter"
+        alt="Flutter icon"
         src="https://user-images.githubusercontent.com/45563022/88324636-9b485a80-cd41-11ea-93d5-4479ce82cdee.png"
         className="svgTechIcon"
       />
@@ -194,7 +194,7 @@ export const technologies = [
   ),
   new Technology(
     "Git",
-    "https://git-scm.com/",
+    "",
     (
       <svg className="svgTechIcon" viewBox="0 0 128 128">
         <path
@@ -207,7 +207,7 @@ export const technologies = [
   ),
   new Technology(
     "MySQL",
-    "https://www.mysql.com/",
+    "",
     (
       <svg className="svgTechIcon" viewBox="0 0 128 128">
         <path
@@ -220,7 +220,7 @@ export const technologies = [
   ),
   new Technology(
     "MongoDB",
-    "https://www.mongodb.com/",
+    "",
     (
       <svg className="svgTechIcon" viewBox="0 0 128 128">
         <path
@@ -325,10 +325,10 @@ export const technologies = [
   ),
   new Technology(
     "Firebase",
-    "https://firebase.google.com/",
+    "",
     (
       <img
-        alt="firebase"
+        alt="Firebase icon"
         className="firebaseIcon"
         src="https://user-images.githubusercontent.com/45563022/90328942-3a1d4b00-dfbe-11ea-8845-90fdbd40c596.png"
       />
@@ -337,7 +337,7 @@ export const technologies = [
   ),
   new Technology(
     "Linux",
-    "https://www.linux.org/",
+    "",
     (
       <svg className="svgTechIcon" viewBox="0 0 128 128">
         <path
@@ -3146,7 +3146,7 @@ export const technologies = [
   ),
   new Technology(
     "Bootstrap",
-    "https://getbootstrap.com/",
+    "",
     (
       <svg className="svgTechIcon" viewBox="0 0 128 128">
         <path

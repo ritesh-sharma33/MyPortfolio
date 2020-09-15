@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="hero-screen-full">
         <Container>
           <Row className="heroRow">
-            <Col data-aos="fade-right" lg={6} xs={12} sm={12}>
+            <Col data-aos="fade-right" lg={6} xs={12} sm={6}>
               <div className="photoSection">
                 <img
                   className="myImage"
@@ -30,7 +30,7 @@ const Hero = () => {
               data-aos="fade-left"
               lg={6}
               xs={12}
-              sm={12}
+              sm={6}
               className="nameColumn"
             >
               <span className="helloText">
@@ -38,8 +38,8 @@ const Hero = () => {
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Hola
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 你好
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; مرحبا
-                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; salut &nbsp;
-              </span> <span role="img" aria-label="hi" aria-hidden="false">👋</span>
+                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; salut &nbsp; <img src="👋" alt="hello emoji" />
+              </span>
               <br /><br />
               <Typist
                 cursor={{ hideWhenDone: true }}
@@ -68,42 +68,42 @@ const Hero = () => {
               <div className="socialHandleSection">
                 <a href="https://www.facebook.com/sharmaritesh3312/">
                   <img
-                    alt="Facebook"
+                    alt="Facebook Icon"
                     className="socialHandleIcon"
                     src="https://user-images.githubusercontent.com/45563022/90330017-48bc3000-dfc7-11ea-8171-bdac7c7f2ba3.png"
                   />
                 </a>
                 <a href="https://github.com/ritesh-sharma33">
                   <img
-                    alt="GitHub"
+                    alt="GitHub Icon"
                     className="socialHandleIcon"
                     src="https://user-images.githubusercontent.com/45563022/90330053-89b44480-dfc7-11ea-8f97-b0f1f45761bd.png"
                   />
                 </a>
                 <a href="https://twitter.com/sharma_ritesh33">
                   <img
-                    alt="Twitter"
+                    alt="Twitter Icon"
                     className="socialHandleIcon"
                     src="https://user-images.githubusercontent.com/45563022/90330082-cbdd8600-dfc7-11ea-998d-d3ebfeb3728c.png"
                   />
                 </a>
                 <a href="https://www.linkedin.com/in/sharmaritesh33/">
                   <img
-                    alt="LinkedIn"
+                    alt="LinkedIn Icon"
                     className="socialHandleIcon"
                     src="https://user-images.githubusercontent.com/45563022/90330101-edd70880-dfc7-11ea-9a1b-ed15bd2b52f4.png"
                   />
                 </a>
                 <a href="https://medium.com/@sharmaritesh3312">
                   <img
-                    alt="Medium"
+                    alt="Medium Icon"
                     className="socialHandleIcon"
                     src="https://user-images.githubusercontent.com/45563022/90330143-1bbc4d00-dfc8-11ea-8aab-39f0e04f7e91.png"
                   />
                 </a>
                 <a href="https://www.youtube.com/channel/UCULHutsJDu3AayYWPZD8f9g">
                   <img
-                    alt="YouTube"
+                    alt="YouTube Icon"
                     className="socialHandleIcon"
                     src="https://user-images.githubusercontent.com/45563022/90330161-4d351880-dfc8-11ea-93a3-72f45d58dcdb.png"
                   />
@@ -149,42 +149,42 @@ const Hero = () => {
         <span className="reachMeOutTxt">Reach me out</span><br /><br />
         <a href="https://www.facebook.com/sharmaritesh3312/">
           <img
-            alt="Facebook"
+            alt="Facebook Icon"
             className="socialHandleIconBottom"
             src="https://user-images.githubusercontent.com/45563022/90330017-48bc3000-dfc7-11ea-8171-bdac7c7f2ba3.png"
           />
         </a>
         <a href="https://github.com/ritesh-sharma33">
           <img
-            alt="Github"
+            alt="GitHub Icon"
             className="socialHandleIconBottom"
             src="https://user-images.githubusercontent.com/45563022/90330053-89b44480-dfc7-11ea-8f97-b0f1f45761bd.png"
           />
         </a>
         <a href="https://twitter.com/sharma_ritesh33">
           <img
-            alt="Twitter"
+            alt="Twitter Icon"
             className="socialHandleIconBottom"
             src="https://user-images.githubusercontent.com/45563022/90330082-cbdd8600-dfc7-11ea-998d-d3ebfeb3728c.png"
           />
         </a>
         <a href="https://www.linkedin.com/in/sharmaritesh33/">
           <img
-            alt="LinkedIn"
+            alt="LinkedIn Icon"
             className="socialHandleIconBottom"
             src="https://user-images.githubusercontent.com/45563022/90330101-edd70880-dfc7-11ea-9a1b-ed15bd2b52f4.png"
           />
         </a>
         <a href="https://medium.com/@sharmaritesh3312">
           <img
-            alt="Medium"
+            alt="Medium Icon"
             className="socialHandleIconBottom"
             src="https://user-images.githubusercontent.com/45563022/90330143-1bbc4d00-dfc8-11ea-8aab-39f0e04f7e91.png"
           />
         </a>
         <a href="https://www.youtube.com/channel/UCULHutsJDu3AayYWPZD8f9g">
           <img
-            alt="YouTube"
+            alt="YouTube Icon"
             className="socialHandleIconBottom"
             src="https://user-images.githubusercontent.com/45563022/90330161-4d351880-dfc8-11ea-93a3-72f45d58dcdb.png"
           />
