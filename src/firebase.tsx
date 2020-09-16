@@ -1,7 +1,6 @@
 
 import * as firebase from 'firebase';
 import 'firebase/firebase-app';
-import config from "./config";
 import "firebase/firestore";
 
 const firebaseConfig = {
